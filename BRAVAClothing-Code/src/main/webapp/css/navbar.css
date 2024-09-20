@@ -1,0 +1,232 @@
+
+.topnav {
+    background-color: var(--darkcream);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 17px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: var(--darkred);
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn{
+    font-size: 17px;
+    font-weight: normal;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 17px;
+    background-color: var(--darkcream);
+    font-family: Raleway;
+}
+
+.dropdown #cat{
+    margin-top: 6px;
+}
+
+.dropdown-content, .content-product {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover, .content-product a:hover {
+    background-color: var(--cream);
+    color: black;
+}
+
+.dropdown-content a, .content-product a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover , .dropdown .dropbtn:hover{
+    background-color: var(--cream);
+    color: black;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    right: 47px;
+}
+
+.dropdown:hover .content-product{
+    display: block;
+    position: absolute;
+}
+
+.iconWrapper {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn, .topnav .search-bar{
+        display: none;
+    }
+
+    .topnav a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive, .iconWrapper, .dropdown .dropbtn {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a, .iconWrapper {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown, .iconWrapper, .dropbtn, .topnav.responsive .search-bar {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content, .content-product, .dropbtn{
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn, .iconWrapper, .topnav.responsive .search-bar {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content, .dropdown:hover .content-product, .dropbtn, .topnav.responsive .search-bar {
+        display: block;
+        position: relative;
+        left: 0;
+    }
+
+    .topnav.responsive .search-bar{
+        z-index:1;
+    }
+
+}
+
+
+.search-bar{
+    float: right;
+    transition: all 1s;
+    width: 52px;
+    height: 46px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 5px;
+    display: inline-block;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.search-bar #search{
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 35.5px;
+    outline: 0;
+    border: 0;
+    border-radius: 20px;
+    padding: 0 20px 0 10px;
+    font-size: 78%;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 14px;
+    width: 37.5px;
+    height: 37.5px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    border-radius: 50%;
+    color: var(--darkred);
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+.fa img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+}
+
+.search-bar:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+.search-bar:hover input{
+    display: block;
+}
+
+.search-bar:hover .fa{
+    background: var(--red);
+    color: white;
+}
+
+div#demo {
+    position: absolute;
+    top: 44px;
+    background-color: white;
+}
+
+.dropdown-search {
+    display: grid;
+    position: absolute;
+    width: 150px;
+    top: 0px;
+    left: 9px;
+    overflow: auto;
+    max-height: 207px;
+    border-bottom:1px solid;
+    border-left:1px solid;
+    border-right:1px solid;
+}
+
+.dropdown-search a {
+    background-color: white;
+    color: black;
+}

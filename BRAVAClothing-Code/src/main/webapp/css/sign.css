@@ -1,0 +1,38 @@
+.app{
+    background: #f7f7f7;
+}
+
+.login{
+    padding: 1rem;
+    background-color: white;
+}
+
+.login > * {
+    margin: 10px;
+}
+
+body {
+    font-family: Raleway;
+}
+
+input{
+    background-color: var(--cream) ;
+    padding: 10px 20px;
+    border: 1px solid grey;
+}
+
+span{
+    top: 16px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 42px 0 42px 0;
+}
+img.avatar {
+    width: 50%;
+}
+
+img.avatar {
+    width: 50%;
+}

@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: normal;
+    src:url("../fonts/Raleway-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: italic;
+    src:url("../fonts/Raleway-ExtraLightItalic.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-style: normal;
+    src:url("../fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-style: italic;
+    src:url("../fonts/Raleway-RegularItalic.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-style: normal;
+    src:url("../fonts/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-style: italic;
+    src:url("../fonts/Raleway-SemiBoldItalic.ttf");
+}
+
+:root {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-width: normal;
+    font-size: clamp(16px, 2vw, 24px);
+    --error: #EE4037;
+    --success: #5FCB12;
+    --cream: #e4dbd3;
+    --darkcream: #8c8070;
+    --darkred: #730303;
+    --red: #A60808;
+    --white: #F2F2F2;
+}
+
+input, select, textarea {}
+
+input:focus, textarea:focus, select:focus {
+    outline:none;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.hide {
+    display:none !important;
+}
+
+.grid-x {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.grid-y {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.grid-inline {
+    display: inline-flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+.cell {
+    flex-basis: 100%;
+}
+
+.field {
+    display: inline-flex;
+    align-items: center;
+}
+
+.field > input, .field > select, .field > textarea {
+    width: 100%;
+}
+
+.field > input[disabled], .field > select[disabled], .field > textarea[disabled] {
+    background-color: var(--cream);
+}
+
+.btn {
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: var(--cream);
+    cursor: pointer;
+}
+
+button.primary {
+    background-color: var(--darkred);
+    color: var(--cream);
+}
+
+button.primary:hover {
+    filter: brightness(120%);
+}
+
+@media screen and (min-width: 769px){
+
+    .w10 {
+        flex-basis: 10%;
+    }
+
+    .w80 {
+        flex-basis: 80%;
+    }
+
+    .w25 {
+        flex-basis: 25%;
+    }
+
+    .w40 {
+        flex-basis: 40%;
+    }
+
+    .w50 {
+        flex-basis: 50%;
+    }
+
+    .w75 {
+        flex-basis: 75%;
+    }
+
+    .w33 {
+        flex-basis: 33%;
+    }
+
+    .w100 {
+        flex-basis: 100%;
+    }
+
+}
+
+
+
+

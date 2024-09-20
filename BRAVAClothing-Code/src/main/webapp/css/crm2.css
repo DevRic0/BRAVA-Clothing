@@ -1,0 +1,106 @@
+.redTable {
+    border: 6px solid var(--darkred);
+    background-color: var(--white);
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.redTable td, .redTable th {
+    border: 1px solid var(--white);
+    padding: 3px 2px;
+}
+
+.redTable tbody td {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 1px solid var(--red);
+}
+
+.redTable thead {
+    background: var(--red);
+}
+
+.redTable thead th {
+    font-size: 19px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.redTable td{
+    font-size: 13px;
+}
+
+.redTable{
+    text-align: left;
+}
+
+.butAdd, .butMod, .butDel{
+    float: left;
+    margin: 10px;
+}
+
+select {
+    display:flex;
+    flex-direction: column;
+    width: 150px;
+    height:40px;
+    float:left;
+    margin: 10px;
+    background-color: var(--darkred);
+    color: var(--white);
+}
+
+fieldset {
+    border: 6px solid var(--darkred);
+    width: 100%;
+    background: var(--white);
+    padding: 5px;
+}
+
+fieldset legend {
+    background: var(--white);
+    border-left: 6px solid var(--darkred);
+    border-radius: 20px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.formWrapper{
+    clear: both;
+}
+
+.formWrapper form{
+    margin: 10px;
+    float: left;
+}
+
+.btn{
+    padding: 15px;
+    margin:5px;
+}
+
+@media screen and (max-width: 768px) {
+    .redTable {
+        float:left;
+    }
+
+    .redTable thead{
+        display: none;
+    }
+
+    .redTable tr{
+        margin-bottom: 15px;
+    }
+
+    .redTable td{
+        text-align: left;
+        position: relative;
+    }
+
+}
+
+

@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    text-align: center;
+    font-size: x-large;
+}
+
+.bg {
+    background-image: url('http://mybeautifuladventures.com/wp-content/uploads/2018/05/Clothing-Store.jpg');
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registeredtext {
+    background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: #b380ff;
+}
+
+a:active {
+    color: #9a51ff;
+}
+
+h1, h3, a {
+    font-family: Raleway;
+    color: var(--cream);
+    position: center;
+}
